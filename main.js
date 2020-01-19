@@ -4,7 +4,16 @@ function calc() {
   var op = document.querySelector("#operator").value;
   var calculate;
 
+  if (op == "add") {
+    calculate = a + b;
+} else if (op == "min") {
+  calculate = a - b;
+} else if (op == "div") {
+  calculate = a / b;
+} else if (op = "mul") {
+  calculate = a * b;
+}
 
-
-  
+//This code inputs "calculate" into the #results element//
+document.querySelector("#results").innerHTML = calculate;
 }
